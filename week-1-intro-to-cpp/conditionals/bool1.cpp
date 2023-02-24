@@ -5,6 +5,7 @@ int main() {
    bool isRed;
    bool isBalloon;
 
+// nope
    cin >> isRed;
    cin >> isBalloon;
 
