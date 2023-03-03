@@ -1,4 +1,5 @@
-// fixed-size array
+/* Fixed size array, functions initialized inside of class declaration 
+using top as the top element in the stack */
 
 #include <iostream>
 
@@ -6,9 +7,9 @@ using namespace std;
 
 class Stack {
 private:
-    int top; // index of the top element in the stack
+    int top;            // index of the top element in the stack
     const int MAX = 10; // maximum size of the stack
-    int a[10]; // array to store the elements of the stack
+    int a[MAX];          // array to store the elements of the stack
 
 public:
     Stack() { top = -1; } // constructor, initialize top to -1

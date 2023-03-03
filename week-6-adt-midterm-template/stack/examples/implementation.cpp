@@ -1,3 +1,7 @@
+/* Fixed size array, functions initialized outside of class declaration
+using top as a variable representing the top of the array */
+
+
 #include <iostream>
 using namespace std;
 
@@ -14,8 +18,8 @@ class Stack{
     public:
     int a[MAX];
 
-    // constructor setting the int private variable "top" to -1
-    Stack() {top = -1;}
+    // constructor setting the int private variable "top" to 0
+    Stack() {top = 0;}
 
     // function declarations as they perform public operations on the Stack objects
     bool push(int x);
