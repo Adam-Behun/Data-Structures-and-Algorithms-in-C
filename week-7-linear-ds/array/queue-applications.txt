@@ -1,0 +1,9 @@
+Please find at least three applications for a Queue and explain why a Queue is used for that application.
+
+Task scheduling in CPUs - queue is used here because the computer works on the tasks as they come in (First-in First-out). The CPU should be as utilized as possible and the tasks should be executed fairly - time and resources should be fairly allocated. 
+
+Resource Allocations - For example in printers queues are used as we queue the jobs within the computer which then commands the docs to print in the order as they come ine
+
+Batch processing - Apache Spark framework uses queue data structure to schedule the execution of the jobs held in a queue. It is far more complex and I do not yet understand it but queue would fit within this framework 
+
+Message Buffering - the messages that the producers send are held in a queue before the received sees them. This can be all kinds of messages or signals that are transmitted between machines, not just "messages".
