@@ -1,0 +1,5 @@
+Recursion is useful because it is simpler to implement in many cases, however, it is usually considered worse in case of space and time complexity. 
+This is because everytime we call the function in recursion the compiler needs to allocate resources for the whole function to run and 
+also functions make copies of all the variables and that is an expensive operation.
+Calling the same function again and again is simple to implement but slow because of those two reasons 
+- function make copies and compiler needs to run the whole function again in recursion. 
