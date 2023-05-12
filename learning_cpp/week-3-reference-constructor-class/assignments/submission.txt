@@ -1,0 +1,65 @@
+*** It might be easier to see my explanation of the code in the class.cpp file. The number lines refer to that program. 
+
+
+
+1) What is the output of this program? [1 pt]
+
+1
+Copy constructor A
+2
+Copy constructor B
+Copy constructor B
+Call func2
+Destructor B
+1
+Call func3
+3
+Destructor B
+Destructor B
+
+2) Please make a line-by-line explanation about the output. Your explanation should include which constructor/destructor is called and why that constructor/destructor is called. [6 pt]
+
+ int main(){
+     // create object test1 (class A), constructor with no params called, ln 12
+     A test1; // no print
+
+     // print the num variable of test1 (value 1), ln 13 sets num to 1 
+     cout<<test1.num<<endl; // prints 1
+
+     // call copy constructor and create a copy of an object test1, ln 17
+     test1 = 2;             // prints Copy constructor A
+
+     // call function func(A) on test1 object (returns "obj.num +=1"), ln 98
+     func(test1);           // no print  
+
+     // prints results of the func(test1) operation above (returned num+=1) ln 99
+     cout<<test1.num<<endl; // prints 2
+
+     // create object test2 (class B), pass integer 1, constructor ln 38 is called
+     B test2(1);            // no print
+
+     // create object test3, copy constructor called, ln 43, pass in the object test2
+     B test3(test2);        // prints Copy constructor B
+
+     // call func2 on the test2 object, sets obj.num to 3, pass by value --> copy of object is made, ln 43 > ln 103 > ln 49
+     func2(test2);          // prints Copy constructor B<<endl<<Call func2<<endl<<DestructorB as the function returned and the tmp object is deleted afterwards
+     
+     // print num of test2 object which is not changed since its initialization in ln 76
+     cout<<test2.num<<endl; // prints 1
+
+     // passed by reference, no copy object is created, the original is changed, ln 109 
+     func3(test3);          // prints Call func3
+     
+     // result of the previously executed function, deletes the test3 object, ln 49
+     cout<<test3.num<<endl; // prints 3, Destructor B
+     
+     // object test2 goes out of scope and contructor B gets called, ln 49       
+     return 0;              // prints Destructor B
+
+ }
+
+
+3) What are the differences between the function void func2(B obj) and the function void func3(B &obj)? In line 68 obj.num = 3; , which object's num is set to 3? [3 pt]
+
+func2 creates a tmp copy of an object and sets its value to 3 while func3 does not create a copy of an object and it changes the real value of the object (pass by value vs pass by reference)
+The func2(test2) is called but creates a copy of an object test 2 and that's objects value is set to 3. We just never return it because we instead print only the original of the object test2 which num variable has not been changed since its initialization in line 51 with "B test2(1)"

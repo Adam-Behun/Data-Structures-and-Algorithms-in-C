@@ -1,0 +1,6 @@
+Question 4
+
+1. The tree is unique. Two people drawing the same Huffman coding table and tree can have two different designs.
+2. Variable length-code which can mean slower computation. The codes have different lengths based on where they are in the tree
+2. Continued = we might be able to solve the issue of Variable length code by using binary encoding
+3. Another thing to see is that we need to know the frequency of each symbol in advance which is just not possible sometimes.
