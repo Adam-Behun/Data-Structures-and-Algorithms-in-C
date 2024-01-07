@@ -10,22 +10,13 @@ class queue{
     int num_ele;
     public:
     queue();
-
     template <typename T1>
-
     void enqueue(T1);
-
     void dequeue();
-
     T front();
-
     T back();
-
     bool IsFull();
-
     bool IsEmpty();
-
     void print();
 };
-
 #endif /* queue.h */

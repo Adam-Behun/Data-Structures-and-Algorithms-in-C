@@ -17,16 +17,14 @@ Welcome to my collection of data structures and algorithms. This repository is a
 
 <h3>Circular Array</h3>
 <p><strong>Description:</strong> An array where the end is connected back to the start, forming a circle, often used in implementing circular queues.</p>
-<!-- Replace with your image or code snippet -->
-<img src="link_to_circular_array_image_or_code.png" alt="Circular Array" />
+<img src="circular-array.png" alt="Circular Array" />
 
 <h3>Singly Linked List</h3>
 <p><strong>Description:</strong> A list where each node contains data and a pointer to the next node in the sequence.</p>
 
 <h3>Doubly Linked List</h3>
 <p><strong>Description:</strong> Similar to a singly linked list, but each node has two references: one to the next node and one to the previous.</p>
-<!-- Replace with your image or code snippet -->
-<img src="link_to_doubly_linked_list_image_or_code.png" alt="Doubly Linked List" />
+<img src="doubly-linked-list.png" alt="Doubly Linked List" />
 
 <h2 id="non-linear-data-structures">Non-Linear Data Structures</h2>
 
@@ -37,21 +35,20 @@ Welcome to my collection of data structures and algorithms. This repository is a
 
 <h3>Queue</h3>
 <p><strong>Description:</strong> A linear collection that follows a First In First Out (FIFO) order.</p>
-<!-- Replace with your image or code snippet -->
-<img src="link_to_queue_image_or_code.png" alt="Queue" />
+
+<img src="queue.png" alt="Queue" />
 
 <h3>Priority Queue</h3>
 <p><strong>Description:</strong> Similar to a regular queue, but each element has a priority associated with it. Higher priority elements are dequeed first.</p>
 
 <h3>Dequeue (Double-Ended Queue)</h3>
 <p><strong>Description:</strong> An abstract data type that generalizes a queue, allowing insertion and deletion at both ends.</p>
-<!-- Replace with your image or code snippet -->
-<img src="link_to_dequeue_image_or_code.png" alt="Dequeue" />
+<img src="dequeue.png" alt="Dequeue" />
 
 <h3>Circular Linked List</h3>
 <p><strong>Description:</strong> A linked list where the last node points to the first node, forming a circle.</p>
 <!-- Replace with your image or code snippet -->
-<img src="link_to_circular_linked_list_image_or_code.png" alt="Circular Linked List" />
+<img src="circ-list.png" alt="Circular Linked List" />
 
 <h3>Singly Linked List Queue</h3>
 <p><strong>Description:</strong> A queue implementation using a singly linked list, allowing FIFO operation.</p>
