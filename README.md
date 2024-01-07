@@ -1,4 +1,4 @@
-# Data Structures & Algorithms in C++
+<h1> Data Structures & Algorithms in C++</h1>
 
 Welcome to my collection of data structures and algorithms. This repository is a showcase of various data structures I've explored and implemented, each playing a crucial role in efficient data management and manipulation.
 
@@ -17,7 +17,9 @@ Welcome to my collection of data structures and algorithms. This repository is a
 
 <h3>Circular Array</h3>
 <p><strong>Description:</strong> An array where the end is connected back to the start, forming a circle, often used in implementing circular queues.</p>
-<img src="visuals/circular-array.png" alt="Circular Array" />
+<p align="center">
+  <img src="visuals/circular-array.png" alt="Circular Array" />
+</p>
 
 <h3>Singly Linked List</h3>
 <p><strong>Description:</strong> A list where each node contains data and a pointer to the next node in the sequence.</p>
@@ -47,13 +49,12 @@ Welcome to my collection of data structures and algorithms. This repository is a
 
 <h3>Circular Linked List</h3>
 <p><strong>Description:</strong> A linked list where the last node points to the first node, forming a circle.</p>
-<!-- Replace with your image or code snippet -->
 <img src="visuals/circ-list.png" alt="Circular Linked List" />
 
 <h3>Singly Linked List Queue</h3>
 <p><strong>Description:</strong> A queue implementation using a singly linked list, allowing FIFO operation.</p>
 
-## Sorting Algorithms Complexity
+<h2>Sorting Algorithms Complexity</h2>
 
 The following table summarizes the time and space complexities of various sorting algorithms that have been implemented in this repository:
 
